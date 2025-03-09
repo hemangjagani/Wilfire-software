@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1da53b85f2cf3e3848374cb1e24e5213 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1da53b85f2cf3e3848374cb1e24e5213" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1da53b85f2cf3e3848374cb1e24e5213 = L.map(
+                "map_1da53b85f2cf3e3848374cb1e24e5213",
+                {
+                    center: [43.7, -79.4],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_babd91ea40958443add7893f3c7b1d8e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_babd91ea40958443add7893f3c7b1d8e.addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var marker_fd6977e6c9ce271abc0aa23e7865d693 = L.marker(
+                [43.8, -79.5],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_5be811e879bea776677bdd486745a753 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "glyphicon-fire",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fd6977e6c9ce271abc0aa23e7865d693.bindTooltip(
+                `<div>
+                     Wildfire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd6977e6c9ce271abc0aa23e7865d693.setIcon(icon_5be811e879bea776677bdd486745a753);
+            
+    
+            var marker_b609de0166b24c5e2e03630fffaf7005 = L.marker(
+                [43.9, -79.3],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_b69cc1b7a16a26e0315635aaafb17dcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "glyphicon-fire",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b609de0166b24c5e2e03630fffaf7005.bindTooltip(
+                `<div>
+                     Wildfire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b609de0166b24c5e2e03630fffaf7005.setIcon(icon_b69cc1b7a16a26e0315635aaafb17dcc);
+            
+    
+            var marker_ed0825498a2339c1a3237d4605a45ff1 = L.marker(
+                [43.65, -79.38],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_2385bb6f16ec3a58b318c0c0bce3008f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "glyphicon-fire",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ed0825498a2339c1a3237d4605a45ff1.bindTooltip(
+                `<div>
+                     Wildfire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed0825498a2339c1a3237d4605a45ff1.setIcon(icon_2385bb6f16ec3a58b318c0c0bce3008f);
+            
+    
+            var marker_4a4d067f1fc7c2d55db25c8f0e417363 = L.marker(
+                [43.72, -79.5],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_af589de03c85abec2dc766909c118110 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "glyphicon-fire",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4a4d067f1fc7c2d55db25c8f0e417363.bindTooltip(
+                `<div>
+                     Wildfire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a4d067f1fc7c2d55db25c8f0e417363.setIcon(icon_af589de03c85abec2dc766909c118110);
+            
+    
+            var marker_f678b61cfa956762bbc468dc27b17bc4 = L.marker(
+                [44.0, -79.2],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_3510b8e4061dca51e7a88343427fccda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "glyphicon-fire",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f678b61cfa956762bbc468dc27b17bc4.bindTooltip(
+                `<div>
+                     Wildfire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f678b61cfa956762bbc468dc27b17bc4.setIcon(icon_3510b8e4061dca51e7a88343427fccda);
+            
+    
+            var marker_517cfa9729f9800dee14e6b566ed752d = L.marker(
+                [43.84, -79.03],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_59ec0c8af5405fb107c89cee566d22ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "glyphicon-ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_517cfa9729f9800dee14e6b566ed752d.bindTooltip(
+                `<div>
+                     Safe Zone - Pickering
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_517cfa9729f9800dee14e6b566ed752d.setIcon(icon_59ec0c8af5405fb107c89cee566d22ad);
+            
+    
+            var marker_872e298529d22d683bc08617c90473b9 = L.marker(
+                [43.87, -78.8],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_534e1ef24f454fcbef012b272f85e2a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "glyphicon-ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_872e298529d22d683bc08617c90473b9.bindTooltip(
+                `<div>
+                     Alternative Safe Zone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_872e298529d22d683bc08617c90473b9.setIcon(icon_534e1ef24f454fcbef012b272f85e2a8);
+            
+    
+            var poly_line_97cd4f2b72da4ea71f5504a1b680c384 = L.polyline(
+                [[43.8, -79.5], [43.84, -79.03]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5,5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_97cd4f2b72da4ea71f5504a1b680c384.bindTooltip(
+                `<div>
+                     Danger Zone🔥
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e7b35daedf13800ef2a4580a6d918b9 = L.marker(
+                [43.82, -79.265],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_d5cfa911f382760a67f542f37b894414 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_1e7b35daedf13800ef2a4580a6d918b9.setIcon(div_icon_d5cfa911f382760a67f542f37b894414);
+        
+    
+            marker_1e7b35daedf13800ef2a4580a6d918b9.bindTooltip(
+                `<div>
+                     Danger Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e7b35daedf13800ef2a4580a6d918b9.setIcon(div_icon_d5cfa911f382760a67f542f37b894414);
+            
+    
+            var poly_line_f34d9569d1ab22b3b107e668a75b9a1c = L.polyline(
+                [[43.84, -79.03], [43.87, -78.8]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_f34d9569d1ab22b3b107e668a75b9a1c.bindTooltip(
+                `<div>
+                     Safe Route ✅
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6b6cc61669edcb30e4641c1f1dfd4c1f = L.marker(
+                [43.855000000000004, -78.91499999999999],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_2b309482a5a90d7c98e8cad7039d59f1 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_6b6cc61669edcb30e4641c1f1dfd4c1f.setIcon(div_icon_2b309482a5a90d7c98e8cad7039d59f1);
+        
+    
+            marker_6b6cc61669edcb30e4641c1f1dfd4c1f.bindTooltip(
+                `<div>
+                     Safe Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b6cc61669edcb30e4641c1f1dfd4c1f.setIcon(div_icon_2b309482a5a90d7c98e8cad7039d59f1);
+            
+    
+            var poly_line_20d5e319a602c1f2014575033e1fae11 = L.polyline(
+                [[43.9, -79.3], [43.84, -79.03]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5,5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_20d5e319a602c1f2014575033e1fae11.bindTooltip(
+                `<div>
+                     Danger Zone🔥
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d817fd32cad77ed5fe80930f1747c6d9 = L.marker(
+                [43.870000000000005, -79.16499999999999],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_5eb1ae113d7df77bf3c86d2d0b4d246b = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_d817fd32cad77ed5fe80930f1747c6d9.setIcon(div_icon_5eb1ae113d7df77bf3c86d2d0b4d246b);
+        
+    
+            marker_d817fd32cad77ed5fe80930f1747c6d9.bindTooltip(
+                `<div>
+                     Danger Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d817fd32cad77ed5fe80930f1747c6d9.setIcon(div_icon_5eb1ae113d7df77bf3c86d2d0b4d246b);
+            
+    
+            var poly_line_0da06e93a43122ffb641956b8cf326a0 = L.polyline(
+                [[43.84, -79.03], [43.87, -78.8]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_0da06e93a43122ffb641956b8cf326a0.bindTooltip(
+                `<div>
+                     Safe Route ✅
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9fa1d2f5c1b53aa0e1ca74f919a5c99d = L.marker(
+                [43.855000000000004, -78.91499999999999],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_b5abbc13b9fb93395403549d6ce58d0c = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_9fa1d2f5c1b53aa0e1ca74f919a5c99d.setIcon(div_icon_b5abbc13b9fb93395403549d6ce58d0c);
+        
+    
+            marker_9fa1d2f5c1b53aa0e1ca74f919a5c99d.bindTooltip(
+                `<div>
+                     Safe Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fa1d2f5c1b53aa0e1ca74f919a5c99d.setIcon(div_icon_b5abbc13b9fb93395403549d6ce58d0c);
+            
+    
+            var poly_line_eb5d1eece97a21c103b491502316833b = L.polyline(
+                [[43.65, -79.38], [43.84, -79.03]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5,5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_eb5d1eece97a21c103b491502316833b.bindTooltip(
+                `<div>
+                     Danger Zone🔥
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf151d7ae6877c0f5531d13e1b46ae90 = L.marker(
+                [43.745000000000005, -79.205],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_596cec5bc4abe75b628f7fc27ddb74c5 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_bf151d7ae6877c0f5531d13e1b46ae90.setIcon(div_icon_596cec5bc4abe75b628f7fc27ddb74c5);
+        
+    
+            marker_bf151d7ae6877c0f5531d13e1b46ae90.bindTooltip(
+                `<div>
+                     Danger Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf151d7ae6877c0f5531d13e1b46ae90.setIcon(div_icon_596cec5bc4abe75b628f7fc27ddb74c5);
+            
+    
+            var poly_line_15de396498601803d6b2a110b779a375 = L.polyline(
+                [[43.84, -79.03], [43.87, -78.8]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_15de396498601803d6b2a110b779a375.bindTooltip(
+                `<div>
+                     Safe Route ✅
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_033a82f17de1188f2d9d9bc3bc080c77 = L.marker(
+                [43.855000000000004, -78.91499999999999],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_8087e1763eeab4ca3dae279d38ac1a85 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_033a82f17de1188f2d9d9bc3bc080c77.setIcon(div_icon_8087e1763eeab4ca3dae279d38ac1a85);
+        
+    
+            marker_033a82f17de1188f2d9d9bc3bc080c77.bindTooltip(
+                `<div>
+                     Safe Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_033a82f17de1188f2d9d9bc3bc080c77.setIcon(div_icon_8087e1763eeab4ca3dae279d38ac1a85);
+            
+    
+            var poly_line_a4574f64d22ea7a008723cacafe17661 = L.polyline(
+                [[43.72, -79.5], [43.84, -79.03]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5,5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_a4574f64d22ea7a008723cacafe17661.bindTooltip(
+                `<div>
+                     Danger Zone🔥
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e2b35b068f12b5a79a0ff737ce54c72 = L.marker(
+                [43.78, -79.265],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_c5c39e5ac7a982440b6dface7cdfb361 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_2e2b35b068f12b5a79a0ff737ce54c72.setIcon(div_icon_c5c39e5ac7a982440b6dface7cdfb361);
+        
+    
+            marker_2e2b35b068f12b5a79a0ff737ce54c72.bindTooltip(
+                `<div>
+                     Danger Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e2b35b068f12b5a79a0ff737ce54c72.setIcon(div_icon_c5c39e5ac7a982440b6dface7cdfb361);
+            
+    
+            var poly_line_4515e1e56ceab68d8945256a13e24d65 = L.polyline(
+                [[43.84, -79.03], [43.87, -78.8]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_4515e1e56ceab68d8945256a13e24d65.bindTooltip(
+                `<div>
+                     Safe Route ✅
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da25202a6f24cd035081a2abbed6a32c = L.marker(
+                [43.855000000000004, -78.91499999999999],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_d0567d8bf708d80d09fefe86940ceeec = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_da25202a6f24cd035081a2abbed6a32c.setIcon(div_icon_d0567d8bf708d80d09fefe86940ceeec);
+        
+    
+            marker_da25202a6f24cd035081a2abbed6a32c.bindTooltip(
+                `<div>
+                     Safe Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da25202a6f24cd035081a2abbed6a32c.setIcon(div_icon_d0567d8bf708d80d09fefe86940ceeec);
+            
+    
+            var poly_line_8f4c91f398a61a0fa1c1ca45da10908e = L.polyline(
+                [[44.0, -79.2], [43.84, -79.03]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5,5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_8f4c91f398a61a0fa1c1ca45da10908e.bindTooltip(
+                `<div>
+                     Danger Zone🔥
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fc9749a4219248143e34bce274725b80 = L.marker(
+                [43.92, -79.11500000000001],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_4b0bb5b35dd8ace699609c84ba03a264 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_fc9749a4219248143e34bce274725b80.setIcon(div_icon_4b0bb5b35dd8ace699609c84ba03a264);
+        
+    
+            marker_fc9749a4219248143e34bce274725b80.bindTooltip(
+                `<div>
+                     Danger Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc9749a4219248143e34bce274725b80.setIcon(div_icon_4b0bb5b35dd8ace699609c84ba03a264);
+            
+    
+            var poly_line_e23bc3208e3f30192339ae9f2ff96198 = L.polyline(
+                [[43.84, -79.03], [43.87, -78.8]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_e23bc3208e3f30192339ae9f2ff96198.bindTooltip(
+                `<div>
+                     Safe Route ✅
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f1a24feb8e85b44aa0f467e0b682c71 = L.marker(
+                [43.855000000000004, -78.91499999999999],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var div_icon_4adbd75c6df7b4c0d2b4a4f42d260574 = L.divIcon({
+  "html": "\u27a1\ufe0f",
+  "className": "empty",
+});
+            marker_8f1a24feb8e85b44aa0f467e0b682c71.setIcon(div_icon_4adbd75c6df7b4c0d2b4a4f42d260574);
+        
+    
+            marker_8f1a24feb8e85b44aa0f467e0b682c71.bindTooltip(
+                `<div>
+                     Safe Path
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f1a24feb8e85b44aa0f467e0b682c71.setIcon(div_icon_4adbd75c6df7b4c0d2b4a4f42d260574);
+            
+    
+            var marker_bc207c64cbb65196a3eda4dd411bc211 = L.marker(
+                [40.0, 40.0],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_153679c6dd3e74d0562c6272bdf00533 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "glyphicon-user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bc207c64cbb65196a3eda4dd411bc211.bindTooltip(
+                `<div>
+                     Your Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc207c64cbb65196a3eda4dd411bc211.setIcon(icon_153679c6dd3e74d0562c6272bdf00533);
+            
+    
+            var marker_5f3f46cc368b5be672d02d44c55b64fc = L.marker(
+                [40.2, 39.8],
+                {
+}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            var icon_e5bd05ad570b980b5877815035fdcc2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "glyphicon-road",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5f3f46cc368b5be672d02d44c55b64fc.bindTooltip(
+                `<div>
+                     Recommended Evacuation Direction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f3f46cc368b5be672d02d44c55b64fc.setIcon(icon_e5bd05ad570b980b5877815035fdcc2b);
+            
+    
+            var poly_line_5a66620a8feb0629fd0ceda659919d92 = L.polyline(
+                [[40.0, 40.0], [40.2, 39.8]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1da53b85f2cf3e3848374cb1e24e5213);
+        
+    
+            poly_line_5a66620a8feb0629fd0ceda659919d92.bindTooltip(
+                `<div>
+                     Evacuation Route 🏃
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
