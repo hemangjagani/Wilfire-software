@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox,simpledialog
 import requests
 import folium
 import webbrowser
@@ -12,17 +12,37 @@ button_bg = "#3498DB"
 button_fg = "white"
 font_style = ("Arial", 12, "bold")
 
+def get_location():
+    try:
+        response = requests.get("https://ipinfo.io/json")
+        if response.status_code == 200:
+            data = response.json()
+            city = data['city']
+            return city
+        else:
+            messagebox.showerror("Error", "Failed to fetch location data.")
+            return None
+    except Exception as e:
+        messagebox.showerror("Error", f"Error fetching location: {e}")
+        return None
+
 def get_weather():
-    API_KEY = "YOUR_OPENWEATHER_API_KEY"
-    CITY = "Toronto"
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
-    response = requests.get(url)
-    if response.status_code == 200:
-        data = response.json()
-        weather_info = f"Temperature: {data['main']['temp']}°C\nHumidity: {data['main']['humidity']}%\nWeather: {data['weather'][0]['description']}"
-        messagebox.showinfo("Weather Update", weather_info)
+    city = get_location()
+    if city:
+        # Ask the user to confirm or change the detected city
+        city = simpledialog.askstring("Confirm City", f"Detected city is {city}. Enter correct city if needed:", initialvalue=city)
+        if city:
+            url = f"https://wttr.in/{city}?format=%t+%h+%C"  # %t for temperature, %h for humidity, %C for weather condition
+            response = requests.get(url)
+            if response.status_code == 200:
+                weather_info = response.text
+                messagebox.showinfo("Weather Update", f"Weather in {city}: {weather_info}")
+            else:
+                messagebox.showerror("Error", "Failed to fetch weather data.")
+        else:
+            messagebox.showerror("Error", "No city entered.")
     else:
-        messagebox.showerror("Error", "Failed to fetch weather data.")
+        messagebox.showerror("Error", "Could not fetch user location.")
 
 def show_emergency_contacts():
     contacts = "🔥 Emergency Contacts:\n\n📞 Fire Department: 911\n🚑 Ambulance: 911\n🚓 Police: 911\n🌲 Forest Fire Hotline: 1-800-667-1940"
